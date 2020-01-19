@@ -37,7 +37,7 @@ void insertEnd(int n,struct Node** head)
 	struct Node* r = *head;
 	if(r == NULL)
 	{
-		r = temp;
+		*head = temp;
 	}
 	else 
 	{
