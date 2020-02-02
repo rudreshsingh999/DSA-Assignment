@@ -26,6 +26,7 @@ int main() {
 
 		ar[a] = realloc(ar[a], size[a]+1);
 		ar[b] = realloc(ar[b], size[b]+1);
+		
 		size[a]++;
 		size[b]++;
 	}
@@ -35,7 +36,7 @@ int main() {
 	int min = 100000;
 	int ans = -1;
 	for (int x = 0; x < n; x++) {
-		if( x == r)
+		if(x == r)
 			continue;
 		int stack[2*n];
 		int i = 0;
