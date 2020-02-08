@@ -21,7 +21,6 @@ int main() {
 				low = mid + 1;
 			}
 		}
-
 		printf("%lld\n", low-1);
 	}
 }
