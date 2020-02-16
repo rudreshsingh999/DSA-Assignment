@@ -11,6 +11,7 @@ void d_to_b(int n, int k, int ar[]) {
 		k /= 2;
 	}
 }
+
 void func(int ar[], int n, int i, int temp[]) {
 	if(i == n) {
 		for(int x = 0; x < n; x++) 

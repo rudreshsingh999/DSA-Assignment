@@ -24,7 +24,7 @@ int main() {
     int l = 0;
     int h = n-1;
     int i = -1;
-    while(l<=h) {
+    while(l <= h) {
     	int mid = (l+h)/2;
     	if(ar[mid] < ar[mid-1]) {
     		i = mid;
