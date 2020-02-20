@@ -56,9 +56,7 @@ int main() {
 
     		r3[j++] = ')';
     		r3[j] = '\0';
-    		// printf("%s", r3);
     		strcpy(stack[++i], r3);
-    		// printf("%s", stack[0]);
     	}
     }
     printf("%d\n", st[k]);

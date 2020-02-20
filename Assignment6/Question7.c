@@ -34,6 +34,20 @@ int main() {
     int r, k;
     scanf("%d%d", &r, &k);
 
+    int leaf[n];
+    int i = 0;
+    for(int x = 0; x < n; x++) {
+        int c = 0;
+        for(int y = 0; y < n; y++) {
+            if(ar[x][y] != 10000000 && x != y) {
+                c++;
+            }
+        }
+        if(c == 1) {
+            leaf[i++] = x;
+        }
+    }
+
     for(int x = 0; x < n; x++) {
     	for(int y = 0; y < n; y++) {
     		for(int z = 0; z < n; z++) {
@@ -42,11 +56,19 @@ int main() {
     		}
     	}
     }
-
+    int flag = 0;
     for(int x = 0; x < n; x++) {
     	if(ar[r][x] <= k) {
     		// print only the leaf nodes
-    		printf("%d ", x);
+            for(int y = 0; y < i; y++) {
+                if(leaf[y] == x) {
+                    printf("%d ", x);
+                    flag = 1;
+                }
+            }
     	}
     }
+
+    if(flag == 0)
+        printf("MEOW");
 }
