@@ -4,11 +4,6 @@
 #include <math.h>
 
 int main() {
-	#ifndef ONLINE_JUDGE
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
-
     char s[100];
     scanf("%s", s);
 
@@ -36,5 +31,9 @@ int main() {
     		i--;
     	}
     }
-    printf("YES");
+    if(i == -1){
+    	printf("YES\n");
+    }
+    else
+    	printf("NO\n");
 }
